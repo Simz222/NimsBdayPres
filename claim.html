@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Voucher</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+ 
+<body>
+       <div class="sidebar">
+        <div class="logo">
+            <img src="DBP_logo.png" alt="Dee's Boutique and Spa Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="claim.html">Claim Voucher</a></li>
+            </ul>
+            </nav>
+        </div>
+    
+    <div class="content">
+    <div class="top-header"><h2>Claim Your Voucher</h2></div>
+    <p>Welcome to the voucher claim page! If you have a birthday voucher, please enter your details below:</p>
+    
+    
+    <form id="voucherForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="code">Code:</label>
+        <input type="text" id="code" name="code" required>
+        
+        <button type="submit">Claim Voucher</button>
+    </form>
+
+    <script>
+    document.getElementById('voucherForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const code = document.getElementById('code').value.trim();
+        if (name.toLowerCase() === 'naomi' && code === 'TWENNYATE') {
+            window.location.href = 'claimed.html';
+        } else {
+            alert('Invalid name or code.');
+        }
+    });
+    </script>
+</body>
+
+
+</html>

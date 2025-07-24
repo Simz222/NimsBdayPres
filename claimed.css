@@ -1,3 +1,9 @@
+html {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
 .sidebar {
     width: 200px;
     height:100%;

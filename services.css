@@ -1,3 +1,8 @@
+html {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
 .sidebar {
     width: 200px;
     height:100%;
@@ -64,4 +69,26 @@ img {
     width: 160px;
     height: 150px;
    
+}
+
+.nails-image {
+    position: relative;
+    top: -80px; 
+    left: 570px;
+    width: 160px;
+    height: 150px;
+}
+.face-mask-image {
+    position: relative;
+    top: 60px;
+    left: 610px;
+    width: 160px;
+    height: 150px;
+}
+.massage-image {
+    position: relative;
+    top: -220px;
+    left: 450px;
+    width: 160px;
+    height: 150px;
 }
